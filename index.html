@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="questionarre">
+        <div class="form-group">
+          <label for="guns">How important is the Second Amendment to you? Rate 1-10</label>
+          <input class="form-control has-error" id="guns" type="text">
+        </div>
+        <div class="form-group">
+          <label for="pres">Rate 1-10, how happy are you with our current President?</label>
+          <input class="form-control" id="pres" type="text">
+        </div>
+        <button id="submitButton" type="submit" class="btn btn-info">Calculate</button>
+      </form>
+      <div class="final_answer">
+        <h2>Results:</h2>
+        <p>Based on these questions, you are a:</p>
+        <p><span class="result" id="lib">Liberal</span></p>
+        <p><span class="result" id="mod">Moderate</span></p>
+        <p><span class="result" id="con">Conservative</span></p>
+      </div>
+    </div>
+  </body>
+</html>
